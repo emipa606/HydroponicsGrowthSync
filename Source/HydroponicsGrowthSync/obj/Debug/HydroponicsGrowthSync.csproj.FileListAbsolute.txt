@@ -1,0 +1,6 @@
+E:\Steam\steamapps\common\RimWorld\Mods\HydroponicsGrowthSync\Source\HydroponicsGrowthSync\obj\Debug\HydroponicsGrowthSync.csprojAssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\HydroponicsGrowthSync\Source\HydroponicsGrowthSync\obj\Debug\HydroponicsGrowthSync.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\HydroponicsGrowthSync\1.1\Assemblies\HydroponicsGrowthSync.dll
+E:\Steam\steamapps\common\RimWorld\Mods\HydroponicsGrowthSync\1.1\Assemblies\HydroponicsGrowthSync.pdb
+E:\Steam\steamapps\common\RimWorld\Mods\HydroponicsGrowthSync\Source\HydroponicsGrowthSync\obj\Debug\HydroponicsGrowthSync.dll
+E:\Steam\steamapps\common\RimWorld\Mods\HydroponicsGrowthSync\Source\HydroponicsGrowthSync\obj\Debug\HydroponicsGrowthSync.pdb
