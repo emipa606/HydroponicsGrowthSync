@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Hydroponics Growth Sync (Continued)</name>
-	 <packageId>Mlie.HydroponicsGrowthSync</packageId>
+  <name>Hydroponics Growth Sync (Continued)</name>
+  <packageId>Mlie.HydroponicsGrowthSync</packageId>
   <author>Mlie</author>
   <url>https://github.com/emipa606/HydroponicsGrowthSync</url>
   <supportedVersions>
     <li>1.0</li>
     <li>1.1</li>
+    <li>1.2</li>
   </supportedVersions>
-  <modDependencies/>
-  <loadAfter/>
+  <modDependencies />
+  <loadAfter />
   <description>
     Update of ChippedChaps mod for RimWorld 1.1
     https://steamcommunity.com/sharedfiles/filedetails/?id=1537872509
