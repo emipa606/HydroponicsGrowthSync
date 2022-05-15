@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -129,6 +130,8 @@ public class PlantGrowerGrowthSyncer : MapComponent
             {
                 continue;
             }
+
+            averagePlantGrowth = (float)Math.Round(averagePlantGrowth, 4);
 
             var growthRate = SyncRatePerFullGrowth / (plantDefToGrow.plant.growDays * 30f);
             var lowGrowthPlants = 0;

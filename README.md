@@ -5,6 +5,8 @@
     Update of ChippedChaps mod
     https://steamcommunity.com/sharedfiles/filedetails/?id=1537872509
 
+- Fixed the issue with invisible plants
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
