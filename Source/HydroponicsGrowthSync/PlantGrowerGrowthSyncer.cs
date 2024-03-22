@@ -1,25 +1,22 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using LudeonTK;
 using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace HydroponicsGrowthSync;
 
-public class PlantGrowerGrowthSyncer : MapComponent
+public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
 {
     [TweakValue("PlantGrowerGrowthSyncer")]
-    public static bool DrawGroups = false;
+    public static readonly bool DrawGroups = false;
 
     [TweakValue("PlantGrowerGrowthSyncer", 0f, 2.2f)]
-    public static float SyncRatePerFullGrowth = 1.15f;
+    public static readonly float SyncRatePerFullGrowth = 1.15f;
 
-    private readonly List<List<Thing>> plantGrowerGroups = new List<List<Thing>>();
-
-    public PlantGrowerGrowthSyncer(Map map) : base(map)
-    {
-    }
+    private readonly List<List<Thing>> plantGrowerGroups = [];
 
     public override void MapComponentTick()
     {
