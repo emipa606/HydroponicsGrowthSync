@@ -7,12 +7,12 @@ internal static class ThingAdjUtilities
 {
     public static bool CanBeGroupedTo(this Building_PlantGrower lhs, Building_PlantGrower rhs)
     {
-        return lhs.IsConnectedTo(rhs) && lhs.GetPlantDefToGrow() == rhs.GetPlantDefToGrow();
+        return lhs.isConnectedTo(rhs) && lhs.GetPlantDefToGrow() == rhs.GetPlantDefToGrow();
     }
 
-    public static bool IsConnectedTo(this Thing lhs, Thing rhs)
+    private static bool isConnectedTo(this Thing lhs, Thing rhs)
     {
-        var array = lhs.AdjacencyRects();
+        var array = lhs.adjacencyRects();
         foreach (var c in rhs.OccupiedRect())
         {
             for (var i = 0; i < 2; i++)
@@ -27,7 +27,7 @@ internal static class ThingAdjUtilities
         return false;
     }
 
-    public static CellRect[] AdjacencyRects(this Thing thing)
+    private static CellRect[] adjacencyRects(this Thing thing)
     {
         var array = new CellRect[2];
         var cellRect = thing.OccupiedRect();

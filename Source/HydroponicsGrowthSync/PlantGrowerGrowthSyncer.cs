@@ -11,10 +11,10 @@ namespace HydroponicsGrowthSync;
 public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
 {
     [TweakValue("PlantGrowerGrowthSyncer")]
-    public static readonly bool DrawGroups = false;
+    private static readonly bool drawGroups = false;
 
     [TweakValue("PlantGrowerGrowthSyncer", 0f, 2.2f)]
-    public static readonly float SyncRatePerFullGrowth = 1.15f;
+    private static readonly float syncRatePerFullGrowth = 1.15f;
 
     private readonly List<List<Thing>> plantGrowerGroups = [];
 
@@ -25,13 +25,13 @@ public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
             return;
         }
 
-        BuildPlantGrowerGroups();
-        SyncAllGroups();
+        buildPlantGrowerGroups();
+        syncAllGroups();
     }
 
     public override void MapComponentOnGUI()
     {
-        if (!DrawGroups)
+        if (!drawGroups)
         {
             return;
         }
@@ -49,12 +49,12 @@ public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
         }
     }
 
-    private void BuildPlantGrowerGroups()
+    private void buildPlantGrowerGroups()
     {
         plantGrowerGroups.Clear();
-        var enumerable = from x in map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial)
+        var enumerable = (from x in map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial)
             where x is Building_PlantGrower
-            select x;
+            select x).ToArray();
         var hashSet = new HashSet<Thing>();
         var hashSet2 = new HashSet<Thing>();
         foreach (var item in enumerable)
@@ -77,10 +77,10 @@ public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
                     var lhs = (Building_PlantGrower)thing;
                     foreach (var thing2 in enumerable)
                     {
-                        var building_PlantGrower = (Building_PlantGrower)thing2;
-                        if (!hashSet.Contains(building_PlantGrower) && lhs.CanBeGroupedTo(building_PlantGrower))
+                        var buildingPlantGrower = (Building_PlantGrower)thing2;
+                        if (!hashSet.Contains(buildingPlantGrower) && lhs.CanBeGroupedTo(buildingPlantGrower))
                         {
-                            hashSet2.Add(building_PlantGrower);
+                            hashSet2.Add(buildingPlantGrower);
                         }
                     }
                 }
@@ -90,7 +90,7 @@ public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
         }
     }
 
-    private void SyncAllGroups()
+    private void syncAllGroups()
     {
         foreach (var things in plantGrowerGroups)
         {
@@ -130,7 +130,7 @@ public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
 
             averagePlantGrowth = (float)Math.Round(averagePlantGrowth, 4);
 
-            var growthRate = SyncRatePerFullGrowth / (plantDefToGrow.plant.growDays * 30f);
+            var growthRate = syncRatePerFullGrowth / (plantDefToGrow.plant.growDays * 30f);
             var lowGrowthPlants = 0;
             var highGrowthPlants = 0;
             var plantArrayCount = list.Count - 1;
