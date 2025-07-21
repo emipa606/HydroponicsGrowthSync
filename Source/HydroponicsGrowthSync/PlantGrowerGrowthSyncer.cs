@@ -10,12 +10,6 @@ namespace HydroponicsGrowthSync;
 
 public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
 {
-    [TweakValue("PlantGrowerGrowthSyncer")]
-    private static readonly bool drawGroups = false;
-
-    [TweakValue("PlantGrowerGrowthSyncer", 0f, 2.2f)]
-    private static readonly float syncRatePerFullGrowth = 1.15f;
-
     private readonly List<List<Thing>> plantGrowerGroups = [];
 
     public override void MapComponentTick()
@@ -193,4 +187,11 @@ public class PlantGrowerGrowthSyncer(Map map) : MapComponent(map)
             }
         }
     }
+#pragma warning disable IDE0044
+    [TweakValue("PlantGrowerGrowthSyncer")]
+    private static bool drawGroups = false;
+
+    [TweakValue("PlantGrowerGrowthSyncer", 0f, 2.2f)]
+    private static float syncRatePerFullGrowth = 1.15f;
+#pragma warning restore IDE0044
 }

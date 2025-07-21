@@ -3,10 +3,16 @@
   "CanAdd": "0",
   "CanRemove": "0",
   "PreviewVersion": "1.6",
-  "LastXmlCleaning": "2025-06-29T13:59:31.6377959+02:00",
+  "LastXmlCleaning": "2025-07-21T22:55:22.414485+02:00",
   "SocialImageSet": true,
   "SearchTags": [
     " growth",
     " synchronization"
-  ]
+  ],
+  "Patches": false,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 8008,
+  "LinesOfXML": 0,
+  "CodeBaseSize": 62
 }
