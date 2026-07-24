@@ -1,15 +1,15 @@
 # [Hydroponics Growth Sync (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2018301976)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
     Update of ChippedChaps mod
     https://steamcommunity.com/sharedfiles/filedetails/?id=1537872509
 
 - Fixed the issue with invisible plants
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 **Legacy 1.0 Version**
 For now, please use the updated version by Jellypowered here:
@@ -34,13 +34,13 @@ Every in-game hour, the mod loops through all plant-growing buildings in the map
 If you think there are any issues with how the mod identifies groups of buildings, open the debug menu and check the DrawGroups option in the TweakValues menu. A number will be drawn on all plant-growing buildings present on the map, with buildings of the same group having the same number. Use this to confirm if there are any issues with group-building.
 
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -48,4 +48,4 @@ If you think there are any issues with how the mod identifies groups of building
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/HydroponicsGrowthSync?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2018301976) | tags:  growth,  synchronization
+[![Image](https://img.shields.io/github/v/release/emipa606/HydroponicsGrowthSync?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2018301976) | tags: growth, synchronization
